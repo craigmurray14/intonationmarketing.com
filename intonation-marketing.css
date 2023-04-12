@@ -156,3 +156,36 @@ img.circle {
 .team-member-info {
   text-align: left;
 }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.hero .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px !important;
+    }
+    .hero p {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 55px !important;
+    }    
+}
