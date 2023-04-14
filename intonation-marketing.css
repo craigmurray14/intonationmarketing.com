@@ -87,12 +87,12 @@ img.circle {
     padding-right: 6px;
 }
 
-@media (min-width: 768px) {
-    .client-feedback-container {
+@media (min-width: 1000px) {
+    .feedback-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 24px;
-        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 36px;
+        row-gap: 24px;
     }
 }
 
@@ -123,7 +123,6 @@ img.circle {
 
 @media (min-width: 992px) {
     #mc_embed_signup {
-        max-width: 600px;
         margin: 0;
     }    
 }
