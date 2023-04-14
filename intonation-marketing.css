@@ -159,6 +159,7 @@ img.circle {
 
 .hero {
     position: relative;
+    min-height: 50vh;
 }
 
 .hero img {
@@ -167,11 +168,13 @@ img.circle {
 }
 
 .hero .text-container {
+    background: #e1e1e1;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    padding: 60px 0;
 }
 
 
