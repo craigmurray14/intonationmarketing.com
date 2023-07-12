@@ -2,6 +2,10 @@ body {
     background-color: #F9f9f9;
 }
 
+.navbar {
+    background: #ebebeb;
+}
+
 .navbar-toggler {
     border: 0;
 }
@@ -168,7 +172,6 @@ img.circle {
 }
 
 .hero .text-container {
-    background: #e1e1e1;
     position: absolute;
     top: 50%;
     left: 50%;
