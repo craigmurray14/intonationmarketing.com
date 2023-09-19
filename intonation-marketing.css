@@ -1,5 +1,6 @@
 body {
     background: #F1ECE6;
+    color: #173742;
 }
 
 .navbar {
@@ -53,13 +54,21 @@ body {
 .logo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 12px;
+    column-gap: 24px;
+    row-gap: 24px;
     align-items: center;
-    max-width: 70vw;
+    justify-items: center;
+}
+
+.logo-grid img {
+    max-width: 120px;
+    max-height: 120px;
 }
 
 @media (min-width: 768px) {
     .logo-grid {
+        margin: 0 auto;
+        max-width: 70vw;
         grid-template-columns: 1fr 1fr 1fr;
     }    
 }
@@ -68,11 +77,6 @@ body {
     .logo-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }    
-}
-
-.logo-grid img {
-    width: 100%;
-    max-width: 180px;
 }
 
 img.center {
@@ -160,6 +164,7 @@ img.circle {
     display: block;
     width: 90%;
     margin: 0 auto;
+    max-width: 600px;
 }
 
 .hero .text-container {
@@ -227,3 +232,8 @@ img.circle {
 .service-icon {
     width: 96px;
 }
+
+#mc_embed_signup .helper_text {
+    background: transparent;
+}
+
