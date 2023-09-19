@@ -213,13 +213,20 @@ img.circle {
     bottom: 0;
 }
 
+.custom-shape-divider.reverse {
+    transform: scaleX(-1);
+}
+
 .custom-shape-divider svg {
     position: relative;
     display: block;
     width: calc(135% + 1.3px);
     height: 82px;
 }
-
+.custom-shape-divider.shape-2 svg {
+    width: calc(106% + 1.3px);
+    height: 30px;
+}
 
 .custom-shape-divider.white .shape-fill {
     fill: #FFFFFF;
