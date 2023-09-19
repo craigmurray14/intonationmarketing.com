@@ -256,3 +256,17 @@ img.circle {
 .brands-worked-with {
     background: #fff;
 }
+
+.guitar-guy {
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+    padding: 24px 0 32px;
+    transform: translateX(20px);
+}
+
+.ladder {
+    display: block;
+    margin: -64px auto 24px;
+    width: 180px;
+}
