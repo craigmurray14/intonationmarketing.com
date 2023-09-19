@@ -5,10 +5,12 @@ body {
 
 .bg-blue { 
     background: #173742;
+    color: #F1ECE6;
 }
 
 .bg-tan { 
     background: #F1ECE6;
+    color: #173742;
 }
 
 .navbar {
@@ -246,5 +248,4 @@ img.circle {
 
 .brands-worked-with {
     background: #fff;
-
 }
