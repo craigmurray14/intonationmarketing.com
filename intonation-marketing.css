@@ -267,6 +267,8 @@ img.circle {
 
 .ladder {
     display: block;
-    margin: -64px auto 24px;
+    margin: -56px auto 24px;
     width: 180px;
+    position: relative;
+    z-index: 1;
 }
