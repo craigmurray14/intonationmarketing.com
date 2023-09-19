@@ -3,6 +3,14 @@ body {
     color: #173742;
 }
 
+.bg-blue { 
+    background: #173742;
+}
+
+.bg-tan { 
+    background: #F1ECE6;
+}
+
 .navbar {
     background: transparent;
 }
@@ -157,7 +165,7 @@ img.circle {
 
 .hero {
     position: relative;
-    min-height: 75vh;
+    min-height: 62vh;
 }
 
 .hero img {
@@ -188,45 +196,39 @@ img.circle {
     }    
 }
 
-.custom-shape-divider-top {
-    position: absolute;
+.custom-shape-divider {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider.top {
     top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
 }
 
-.custom-shape-divider-top svg {
-    position: relative;
-    display: block;
-    width: calc(135% + 1.3px);
-    height: 82px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top .shape-fill {
-    fill: #FFFFFF;
-}
-
-.custom-shape-divider-bottom-1695102616 {
-    position: absolute;
+.custom-shape-divider.bottom {
     bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
 }
 
-.custom-shape-divider-bottom-1695102616 svg {
+.custom-shape-divider svg {
     position: relative;
     display: block;
     width: calc(135% + 1.3px);
     height: 82px;
 }
 
-.custom-shape-divider-bottom-1695102616 .shape-fill {
+
+.custom-shape-divider.white .shape-fill {
     fill: #FFFFFF;
+}
+
+.custom-shape-divider.blue .shape-fill {
+    fill: #173742;
+}
+
+.custom-shape-divider.tan .shape-fill {
+    fill: #F1ECE6;
 }
 
 .service-icon {
@@ -237,3 +239,12 @@ img.circle {
     background: transparent;
 }
 
+.name-definition {
+    background: #173742;
+    color: #F1ECE6;
+}
+
+.brands-worked-with {
+    background: #fff;
+
+}
