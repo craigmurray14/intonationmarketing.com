@@ -217,12 +217,15 @@ img.circle {
 }
 
 .custom-shape-divider svg {
+    perspective: 1000px;
     position: relative;
     display: block;
     width: calc(135% + 1.3px);
     height: 82px;
-    perspective: 1000px;
+    z-index: 0;
+    margin-bottom: -1px;    
 }
+
 .custom-shape-divider.shape-2 svg {
     width: calc(106% + 1.3px);
     height: 30px;
