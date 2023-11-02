@@ -286,19 +286,22 @@ img.circle {
 }
 
 .guitar-guy {
-    width: 160px;
+    max-width: 200px;
     display: block;
-    margin: 0 auto;
-    padding: 24px 0 32px;
     transform: translateX(20px);
 }
 
 .ladder {
-    display: block;
-    margin: -56px auto 24px;
-    width: 180px;
     position: relative;
     z-index: 1;
+    max-width: 200px;
+    margin-top: -80px;
+    margin-bottom: -120px;
+}
+
+@media (max-width: 768px) {
+    .guitar-guy,
+    .ladder { display: none }
 }
 
 a.cta {
@@ -346,6 +349,15 @@ p.quote-author {
     }
 }
 
-.what-to-expect img {
- max-width: 64px;
+.what-to-expect .content img {
+    min-width: 64px;
+    max-width: 64px;
+}
+
+.intonation-copy {
+    max-width: 400px;
+}
+
+@media (min-width: 768px) {
+    .intonation-copy { margin-left: 80px; }
 }
