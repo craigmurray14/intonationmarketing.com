@@ -1,6 +1,15 @@
 body {
-    background: #F1ECE6;
-    color: #173742;
+    background: #173742;
+    color: #F1ECE6;
+    font-family: 'Noto Serif';
+}
+
+.relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .bg-blue { 
@@ -13,6 +22,21 @@ body {
     color: #173742;
 }
 
+.bg-tan2 {
+    background: #fff7ed;
+    color: #173742;
+}
+
+.bg-light-blue {
+    background: #53B1B1;
+    color: #173742;
+}
+
+.bg-orange {
+    background: #F69000;
+    color: #173742;
+}
+
 .text-blue { 
     color: #173742;
 }
@@ -21,6 +45,9 @@ body {
     color: #F1ECE6;
 }
 
+.text-orange { 
+    color: #F69000;
+}
 
 .navbar {
     background: transparent;
@@ -30,13 +57,31 @@ body {
     border: 0;
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241, 236, 230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #F1ECE6;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.offcanvas.offcanvas-end {
+    border-left: 0;
+}
+
 .navbar-brand {
     padding-left: 12px;
     display: flex;
     align-items: center;
 }
-
-
 
 @media (min-width: 992px) {
 
@@ -268,6 +313,14 @@ img.circle {
     fill: #F1ECE6;
 }
 
+.custom-shape-divider.tan2 .shape-fill {
+    fill: #fff7ed;
+}
+
+.custom-shape-divider.orange .shape-fill {
+    fill: #F69000;
+}
+
 .service-icon {
     width: 96px;
 }
@@ -291,17 +344,27 @@ img.circle {
     transform: translateX(20px);
 }
 
+.guitar-guy,
 .ladder {
-    position: relative;
-    z-index: 1;
-    max-width: 200px;
-    margin-top: -80px;
-    margin-bottom: -120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 270px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .ladder {
+        position: relative;
+        z-index: 1;
+        margin-top: -80px;
+        margin-bottom: -120px;
+    }        
 }
 
 @media (max-width: 768px) {
-    .guitar-guy,
-    .ladder { display: none }
+     { display: none }
 }
 
 a.cta {
@@ -311,11 +374,10 @@ a.cta {
 .break-through p {
     font-size: 20px;
     line-height: 3;
-    color: #000;
 }
 
 .break-through p span {
-    color: #173742;
+    color: #F69000;
     font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -326,7 +388,7 @@ a.cta {
 }
 
 .big-quote p {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 @media (min-width: 768px) {
