@@ -4,6 +4,14 @@ body {
     font-family: 'Noto Serif';
 }
 
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
 .relative {
     position: relative;
 }
@@ -356,6 +364,43 @@ a.cta {
     text-decoration: none;
 }
 
+.bg-graphic {
+    position: absolute;
+    opacity: .1;
+    z-index: 0;
+}
+
+.bg-graphic.top-right {
+    top: -90px;
+    right: -40px;
+    transform: rotate(40deg);
+    width: 100px;
+}
+
+.bg-graphic.bottom-left {
+    bottom: 180px;
+    left: -50px;
+    transform: rotate(140deg);
+    width: 110px;
+}
+
+.bg-graphic.bottom-right {
+    bottom: -100px;
+    right: 20px;
+    transform: rotate(-140deg);
+    width: 110px;
+}
+
+@media (min-width: 768px) {
+    .bg-graphic.bottom-right {
+        right: 200px;
+    }
+}
+
+.break-through {
+    overflow-x: clip;
+}
+
 .break-through p {
     font-size: 20px;
     line-height: 3;
@@ -440,6 +485,7 @@ p.quote-author {
     .ladder {
         margin-top: -80px;
         margin-bottom: -120px;
+        margin-right: -32px;
     }        
 
     .ladder.small,
@@ -448,7 +494,6 @@ p.quote-author {
     .guitar-guy.medium,
     .ladder.medium {
         display: block;
-        margin-right: 0px;
     }
 
 }
