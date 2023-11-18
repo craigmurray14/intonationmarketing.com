@@ -57,6 +57,12 @@ body {
     border: 0;
 }
 
+@media (min-width: 992px) {
+    .nav-link {
+        color: #F1ECE6;
+    }   
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url(
     "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241, 236, 230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -129,19 +135,27 @@ body {
     max-height: 120px;
 }
 
+.logo-grid img.vejo {
+    max-width: 75px
+}
+
 @media (min-width: 768px) {
     .logo-grid {
         margin: 0 auto;
         max-width: 70vw;
         grid-template-columns: 1fr 1fr 1fr;
     }    
+
+    .logo-grid img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .logo-grid img.vejo {
+        max-width: 100px
+    }
 }
 
-@media (min-width: 992px) {
-    .logo-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }    
-}
 
 img.center {
     display: block;
@@ -338,35 +352,6 @@ img.circle {
     background: #fff;
 }
 
-.guitar-guy {
-    max-width: 200px;
-    display: block;
-    transform: translateX(20px);
-}
-
-.guitar-guy,
-.ladder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 270px;
-    margin: auto;
-}
-
-@media (min-width: 768px) {
-    .ladder {
-        position: relative;
-        z-index: 1;
-        margin-top: -80px;
-        margin-bottom: -120px;
-    }        
-}
-
-@media (max-width: 768px) {
-     { display: none }
-}
-
 a.cta {
     text-decoration: none;
 }
@@ -422,4 +407,62 @@ p.quote-author {
 
 @media (min-width: 768px) {
     .intonation-copy { margin-left: 80px; }
+}
+
+.guitar-guy {
+    max-width: 200px;
+    display: block;
+    transform: translateX(20px);
+}
+
+.guitar-guy,
+.ladder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 270px;
+    margin: auto;
+}
+
+.guitar-guy.medium,
+.ladder.medium {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .guitar-guy,
+    .ladder {
+        position: relative;
+        z-index: 1;
+    }        
+
+    .ladder {
+        margin-top: -80px;
+        margin-bottom: -120px;
+    }        
+
+    .ladder.small,
+    .guitar-guy.small { display: none; }
+
+    .guitar-guy.medium,
+    .ladder.medium {
+        display: block;
+        margin-right: 0px;
+    }
+
+}
+
+#approach,
+#definition {
+    max-width: 630px;
+}
+
+#definition {
+    padding-top: 86px;
+}
+
+#mc_embed_signup .button {
+    background: #F1ECE6;
+    color: #173742;
 }
